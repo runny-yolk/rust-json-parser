@@ -44,7 +44,7 @@ fn readStr(source: &mut Reader) -> Option<String> {
 	// charbuf.push(source.peeko());
 	source.o += 1;
 	while source.peeko() != '"' {
-		if(source.peeko() == null) { panic!("fuck") }
+		if(source.peeko() == null) { panic!("uh oh") }
 
 		// handle escapes
 		charbuf.push(source.peeko()); 
